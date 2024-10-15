@@ -1,7 +1,10 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000/api/transactions';
+const API_URL =
+  process.env.REACT_APP_MODE === 'development'
+    ? 'http://localhost:8000/api/transactions'
+    : '/api/transactions';
 axios.defaults.withCredentials = true;
 
 export const useTransactionsStore = create((set) => ({
