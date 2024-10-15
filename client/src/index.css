@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color Palette */
+  --black: #000000;
+  --cyan-bluish-gray: #abb8c3;
+  --white: #fff;
+  --pale-pink: #f78da7;
+  --vivid-red: #cf2e2e;
+  --luminous-vivid-orange: #ff6900;
+  --luminous-vivid-amber: #fcb900;
+  --light-green-cyan: #7bdcb5;
+  --medium-green-cyan: #57beae;
+  --vivid-green-cyan: #00d084;
+  --pale-cyan-blue: #8ed1fc;
+  --vivid-cyan-blue: #0693e3;
+  --vivid-purple: #9b51e0;
+  --dark-gray: #111;
+  --light-gray: #f1f1f1;
+  --yellow: #f4ca16;
+  --dark-brown: #352712;
+  --medium-pink: #e53b51;
+  --light-pink: #ffe5d1;
+  --dark-purple: #2e2256;
+  --purple: #674970;
+  --blue-gray: #22313f;
+  --bright-blue: #55c3dc;
+  --light-blue: #e9f2f9;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: var(--blue-gray);
+}
+
+.bg-medium-green-cyan {
+  background-color: #064e3b;
+}
+
+.bg-light-green-cyan {
+  background-color: #065f46;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination-box {
+  font-size: 16px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  font-weight: bold;
+  color: white;
+}
