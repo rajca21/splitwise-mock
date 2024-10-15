@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 
 import { useAuthStore } from './store/authStore';
@@ -140,6 +140,8 @@ function App() {
             </ProtectedRoute>
           }
         />
+
+        <Route path='*' element={<Navigate to='/' replace />} />
       </Routes>
 
       <Toaster position='top-center' reverseOrder={false} />
